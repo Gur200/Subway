@@ -6,17 +6,25 @@ body {
 }
 
 header {
-    background-color: #009900;  /* Subway green */
+    background-color: #009900;  /* Green for header */
     color: white;
-    padding: 20px;
+    padding: 10px;   /* Box model padding */
+    margin: 10px;    /* Box model margin */
     text-align: center;
 }
 
+nav {
+    background-color: #ffcc00;  /* Yellow for nav */
+    padding: 10px;
+    margin: 10px;
+}
+
 ul {
-    font-weight: bold;  /* Bold navigation links */
+    font-weight: bold;
     list-style-type: none;
     padding: 0;
-    background-color: #ffcc00;  /* Subway yellow */
+    margin: 0 auto;
+    text-align: center;
 }
 
 ul li {
@@ -30,22 +38,47 @@ ul li a {
     font-size: 18px;
 }
 
+main {
+    background-color: #ffffff;  /* White for main */
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;    /* Required border */
+    text-align: center;
+}
+
 p {
-    color: #333333;  /* Dark gray text */
-    padding: 20px;
+    color: #333333;
     font-size: 16px;
 }
 
-h1 {
-    color: #ffcc00;  /* Yellow heading */
+h1, h2 {
+    color: #ffcc00;
 }
 
 footer {
-    background-color: #009900;
+    background-color: #333333;  /* Dark for footer – but overridden by ID */
     color: white;
-    text-align: center;
     padding: 10px;
-    font-size: 12px;  /* Smaller footer text */
+    margin: 10px;
+    text-align: center;
+}
+
+/* Contact page list styles */
+ul.contact {
+    list-style-type: none;  /* No bullets */
+    padding: 0;
+}
+
+ul.contact li {
+    display: block;         /* Each on a different line */
+    margin: 10px 0;         /* Space between lines */
+}
+
+/* Footer copyright ID styles */
+#copyright {
+    background-color: black !important;  /* Black background */
+    color: white !important;             /* White text */
+    text-align: right !important;        /* Right aligned */
 }
 
 img {
